@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: rgb(98, 123, 148);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@layer utilities {
+  .submitBtn {
+    @apply ring-2 px-3 py-2 mt-5 w-full rounded font-semibold bg-white text-cyan-500 cursor-pointer;
+  }
+  .formContainer {
+    @apply rounded-md py-4 pb-8 px-5 min-w-[300px] bg-slate-200 shadow-2xl;
+  }
+}
