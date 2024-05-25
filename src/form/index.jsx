@@ -32,10 +32,8 @@ class Form extends React.Component {
     const errors = validate(this.state);
     const isValid = Object.entries(errors).length === 0;
     if (isValid) {
+      this.props.getUsers(this.state);
       this.resetForm();
-      setTimeout(() => {
-        alert("Singup successful");
-      }, 500);
     } else {
       this.setState({ errors });
     }
