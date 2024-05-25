@@ -32,6 +32,7 @@ const MainForm = (props) => {
         value={props.state.password}
         onChange={props.handleChange}
         error={props.errors.password}
+        pnm={props.errors.pnm}
       />
       <InputText
         name="confirmPassword"
@@ -41,6 +42,7 @@ const MainForm = (props) => {
         value={props.state.confirmPassword}
         onChange={props.handleChange}
         error={props.errors.confirmPassword}
+        pnm={props.errors.pnm}
       />
 
       <div className="text-center">

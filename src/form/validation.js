@@ -12,7 +12,11 @@ export default function validate(values) {
     errors.password = "Please provide your Password";
   }
   if (!confirmPassword) {
-    errors.confirmPassword = "Please provide your Pasword again";
+    errors.confirmPassword = "Please confirm your Password";
+  }
+
+  if (password !== confirmPassword) {
+    errors.pnm = "Password does not match";
   }
 
   return errors;
